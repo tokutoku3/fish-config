@@ -7,7 +7,7 @@ set fish_theme godfather
 # All built-in plugins can be found at ~/.oh-my-fish/plugins/
 # Custom plugins may be added to ~/.oh-my-fish/custom/plugins/
 # Enable plugins by adding their name separated by a space to the line below.
-set fish_plugins theme
+set fish_plugins theme peco
 
 # Path to your custom folder (default path is ~/.oh-my-fish/custom)
 #set fish_custom $HOME/dotfiles/oh-my-fish
@@ -30,4 +30,10 @@ set -x PATH /Users/tokuyama/.nodebrew/current/bin $PATH
 # source-highlight
 set -x LESS -R
 set -x LESSOPEN '| /usr/local/bin/src-hilite-lesspipe.sh %s'
+
+# cheat
+set -x CHEATCOLORS true
+
+# peco
+fish_user_key_bindings
 
